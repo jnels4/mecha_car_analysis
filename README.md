@@ -98,8 +98,14 @@ To determine how "mecha" stacks up against the competition the "mecha" analysis 
   - EX: How does Mecha Car value compare with competitors (in this study we may look at cost, mileage and maintence)
   - EX: How does Mecha Car performance compare with competitors (in this sutdy we may look at MPG and Horse Power)
 4. Merics:  If we are going to look at Mecha Car value we would want to see which models have the lowest purchase price, the best MPG and the lowest maintence, then compare those with similar cars for competators.  We can compare this based on the type of car compact/suv/hybrid, etc or the type of drivetrain 4wd, rear wheel drive and front wheel drive.  
-5. Null hypothesis: cars that cost more have a higher MPG
-   Alternative Hypothesis: car cost has no impact on MPG
-6. For this we'd run a linear regression on car cost vs MPG
-7. Data wise we'd need a data set that had the cost of cars and the miles per gallon for each car model.
+
+Separately, Mecha may want to look at the field of cars and design a new car to maximize profits, to do this, Mecha would want to determine which metircs are rated the highest by consumers when purchasing a new car (see list above), then run some data tests to determine where to focus their R&D on a new car.  Below is a potential analysis that "Mecha" could run when producing a new car to add to their line up that would get the most MPG, and where that would fit into the competition.  "Mecha" would want to design a car that is inexpensive, but also gets high MPG. They may produce this study:
+- Null hypothesis: cars that cost more have a higher MPG
+- Alternative Hypothesis: car cost has no impact on MPG
+- For this we'd run a linear regression on car cost vs MPG
+- Data wise we'd need a data set that had the cost of cars and the miles per gallon for each car model.
+
+After this we could determine if cost impacts MPG, if not, then we can look at other metrics vs MPG and continue to refine our testing until we determine the greatest factors that impact MPG.  
+
+While doing this, we may want to abandon single linear regression and move to a multiple regression model in order to determine the overall most impactful factors on MPG (assuming that MPG is the end-all-be-all consumer factor), and then design a car that focuses on meeting/exceeding those determined factors from our regression test.
 
