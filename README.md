@@ -31,6 +31,9 @@ Given a list of 50 concept cars along with their lenght, weight, spoiler angle, 
 
 # Suspension Coil Analysis
 
+
+### Summary Statistics - Mean / Median / Variance / Standard Deviation
+
 Given a dataset that included suspension coil PSI from multiple different manufacturing lots, we first looked at the overall summary statistics (mean, median, variance and standard deviation), then for a further analysis, we grouped the set by its manufacturing lot and compared each manufacturing lots PSI statistics.  The manufacturers design specifications stated that there should be no more than 100 PSI variance within a lots suspension coils.
 
 Total Summary:
@@ -42,4 +45,23 @@ Based on the total summary we can conclude that the data set met the manufacture
 <img width="485" alt="Screen Shot 2022-08-02 at 2 59 12 PM" src="https://user-images.githubusercontent.com/6634774/182452653-ed6184b1-a932-43a4-aeb7-9079d12052cb.png">
 
 Lot 1 and 2 look pretty good, both are well below teh 100PSI variance guidelines set by the manufacturers design; however, lot 3 showed significant issues.  A variance of 170 PSI means that there were signifcant problems with this lots manufacturing processes.  Because of this variance we highly recommend to the manufactuerer to pull all coils in the Lot3 run, and take a deep look into the manufacturingn process to ensure all machines/proceses/workflows are operating as intended.
+
+### T-test - Overall / Sample tests
+
+After running the summary statistics for the PSI of our manufacturers data, we decided to intiatate T-Testing for the entire data set, and then subsets of the data that included each lot separately (lot1 / lot2 / lot3).  
+
+Our first t-test took a random sampling of 50 entries in our entire dataset and running it against the whole PSI dataset.
+
+<img width="423" alt="Screen Shot 2022-08-02 at 3 33 16 PM" src="https://user-images.githubusercontent.com/6634774/182458487-c1af733e-2978-4f93-b6ee-824894430f49.png">
+
+Based on the p-value of this sample (.68), it can be concluded that the mean of the sample is statistically different from the population, and thus, there is alot of variance in our data, at least more than we would be comfortable with for standard manufacturing process. 
+
+Because of the first random sampling T-Test, we decided to produce a T-Test for each manufacturing lot in our dataset. There were 3 total lots (Lot1/Lot2/Lot3) and discover which of these was throwing our data off, and if our results from the summary statistics could be supported. 
+
+Lot1:
+
+Lot2:
+
+Lot3:
+
 
